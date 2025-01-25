@@ -16,7 +16,7 @@ const Signup = (props) => {
     e.preventDefault();
     const { name, email, password, cpassword } = credentials;
 
-    const response = await fetch("https://code-note-backend.onrender.com", {
+    const response = await fetch("https://code-note-backend.onrender.com/api/auth/createuser", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
